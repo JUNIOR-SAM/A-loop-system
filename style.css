@@ -6,7 +6,7 @@
 
 body{
     background: linear-gradient(135deg, rgba(0, 0, 255, 0.795), rgba(255, 166, 0, 0.726));
-    height: 146rem;
+    height: 153rem;
 }
 
 input{
@@ -21,7 +21,6 @@ input{
     margin: auto;
     margin-top: 40px;
     width: 300px;
-    
 }
 
 button{
@@ -45,7 +44,7 @@ p{
     text-align: center;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 17px;
     padding: 20px 50px 0 50px;
 }
 
@@ -68,5 +67,6 @@ p{
 
     p{
         padding: 20px 10px 0 10px;
+        font-size: 15px;
     }
 }
