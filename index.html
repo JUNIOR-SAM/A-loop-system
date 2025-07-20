@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOOP</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css">
   </head>
-  <body>
+  <body class="d-flex justify-content-center h-auto">
+    <div class="border border-white border-4 col-lg-5  col-10 my-5 text-center mt-lg-5 pb-4 rounded-4">
      <p>This is a loop system, enter any text and it will generate it for you in hundred times 💯💯💯</p>
     <div class="container">
-    <input type="text" id="text" placeholder="Enter any text" /> <br>
-    <button onclick="yourText()">Generate</button>
+    <input type="text" id="text" placeholder="Enter any text" class="col-lg-10 col-10"/> <br>
+    <button onclick="yourText()" class="mt-4 rounded-3 col-lg-6 col-6">Generate</button>
     <div id="show">your multiple text here</div>
+  </div>
   </div>
   </body>
   <script>
@@ -23,8 +26,9 @@
         show.innerHTML += `<h3 style = color:red ;>Input cannot be empty </h3>`;
       } else {
         for (let i = 1; i <= 100; i++) {
-          show.innerHTML += `<h3 style="color:white;">${word}</h3>`;
+          show.innerHTML += `<h5 style="color:white;">${word}</h5>`;
         }
+        text.value = "";
       }
     }
   </script>
